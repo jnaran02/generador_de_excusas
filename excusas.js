@@ -19,8 +19,6 @@ function concatenar() {
      var cuento = quien[excusa.indice]+" "+que[excusa.indice2]+" "+cuando[excusa.indice3];
      
      document.getElementById('resultado').innerHTML = cuento;
-
-   //  return  historia;
 }
 
 
