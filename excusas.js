@@ -2,23 +2,23 @@ let quien = ["A Jose","Mi jefe","Mi perro","Un compañero","Un Conductor","Mi ve
 let que = ["tenia diarrea","se murio","escuchaba rock a todo volumèn","se emborrachó","se suicidó", "se llevo mi tarea"];
 let cuando = ["el martes", "antes de ayer", "anoche", "mientras almorzaba", "al salir del trabajo","antes de dormir"];
 
-function aleatorio() {
+function cuentos() {
     
     var numero = Math.floor((Math.random() * (6-1))+1);
   
 return numero;
 };
 
-function concatenar() {
+function combinar() {
      var excusa = {
-        indice: aleatorio(),
-        indice2:  aleatorio(),
-        indice3:  aleatorio(),
+        array1: cuentos(),
+        array2:  cuentos(),
+        array3:  cuentos(),    
      };
 
-     var cuento = quien[excusa.indice]+" "+que[excusa.indice2]+" "+cuando[excusa.indice3];
+     var historia = quien[excusa.array1]+" "+que[excusa.array2]+" "+cuando[excusa.array3];
      
-     document.getElementById('resultado').innerHTML = cuento;
+     document.getElementById('resultado').innerHTML = historia;
 }
 
 
